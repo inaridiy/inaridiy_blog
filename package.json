@@ -1,18 +1,18 @@
 {
-  "name": "crypteen",
+  "name": "blog",
   "version": "1.0.0",
   "repository": "https://github.com/inaridiy/web3-sns.git",
   "author": "inaridiy",
   "license": "GPL-v3",
   "private": true,
   "scripts": {
-    "dev": "run-p interface:dev backend:dev",
-    "interface:dev": "yarn workspace @crypteen/interface dev",
-    "interface:lint": "yarn workspace @crypteen/interface lint",
+    "dev": "run-p interface:dev",
+    "interface:dev": "yarn workspace @blog/interface dev",
+    "interface:lint": "yarn workspace @blog/interface lint",
     "interface:fix-all": "yarn interface:lint --fix && yarn workspace @web2.7-sns/interface format",
-    "backend:dev": "yarn workspace @crypteen/backend start:dev",
-    "contract:compile": "yarn workspace @crypteen/contract compile",
-    "contract:test": "yarn workspace @crypteen/contract test"
+    "backend:dev": "yarn workspace @blog/backend start:dev",
+    "contract:compile": "yarn workspace @blog/contract compile",
+    "contract:test": "yarn workspace @blog/contract test"
   },
   "workspaces": {
     "packages": [
